@@ -4,8 +4,9 @@
   "description": "Boilerplate for Nodejs projects without Babel",
   "main": "index.js",
   "scripts": {
-    "flow:deps": "flow-typed install",
     "flow": "flow",
+    "flow:check": "flow check ./src/",
+    "flow:deps": "flow-typed install",
     "dev": "watch --wait=1 'flow-remove-types src/ -d lib/' ./src/ & nodemon ./lib/",
     "start": "flow-remove-types src/ -d lib/ && node ./lib/"
   },
