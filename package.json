@@ -1,0 +1,21 @@
+{
+  "name": "flow-node-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate for Nodejs projects without Babel",
+  "main": "index.js",
+  "scripts": {
+    "flow:deps": "flow-typed install",
+    "flow": "flow",
+    "dev": "watch --wait=1 'flow-remove-types src/ -d lib/' ./src/ & nodemon ./lib/",
+    "start": "flow-remove-types src/ -d lib/ && node ./lib/"
+  },
+  "author": "asci@yandex.ru",
+  "license": "ISC",
+  "devDependencies": {
+    "flow-bin": "^0.46.0",
+    "flow-remove-types": "^1.2.1",
+    "flow-typed": "^2.1.2",
+    "nodemon": "^1.11.0",
+    "watch": "^1.0.2"
+  }
+}

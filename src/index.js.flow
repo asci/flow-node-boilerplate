@@ -1,0 +1,6 @@
+// @flow
+export type Test = {|
+  adult: boolean,
+  data: string,
+  age: number
+|};
