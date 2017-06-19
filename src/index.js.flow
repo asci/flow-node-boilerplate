@@ -1,7 +1,12 @@
-// @flow
+export type Point2d = {|
+  x: number,
+  y: number
+|};
+
 export type Test = {|
   adult: boolean,
   data: string,
   name?: string,
-  age: number
+  age: number,
+  location?: Point2d
 |};
