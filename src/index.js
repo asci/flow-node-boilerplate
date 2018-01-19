@@ -11,5 +11,11 @@ const test: Test = {
   location: point
 };
 
+async function run(): Promise<void> {
+  const result: string = await main();
+  console.log(result);
+}
+run();
+
 const test11: string = 'ololo';
 console.log('done', test11);
