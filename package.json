@@ -5,18 +5,21 @@
   "main": "lib/index.js",
   "scripts": {
     "flow": "flow",
+    "flow:coverage": "flow-coverage-report --config .flowcoverage.json",
     "flow:build": "flow-remove-types ./src -d ./lib --all --pretty",
     "flow:check": "flow check ./src/",
     "flow:deps": "flow-typed install",
-    "dev": "watch --wait=1 'flow-remove-types src/ -d lib/ --all --pretty' ./src/ & nodemon ./lib/",
+    "dev":
+      "watch --wait=1 'flow-remove-types src/ -d lib/ --all --pretty' ./src/ & nodemon ./lib/",
     "start": "npm run flow:build && node ./lib/"
   },
   "author": "asci@yandex.ru",
   "license": "ISC",
   "devDependencies": {
-    "flow-bin": "^0.46.0",
-    "flow-remove-types": "^1.2.1",
-    "flow-typed": "^2.1.2",
+    "flow-bin": "^0.63.1",
+    "flow-coverage-report": "^0.4.0",
+    "flow-remove-types": "^1.2.3",
+    "flow-typed": "^2.2.3",
     "nodemon": "^1.11.0",
     "watch": "^1.0.2"
   }

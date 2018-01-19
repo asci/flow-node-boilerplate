@@ -1,0 +1,7 @@
+{
+  "concurrentFiles": 1,
+  "excludeGlob": ["node_modules/**", "flow-typed/**"],
+  "includeGlob": ["src/**/*.js"],
+  "threshold": 100,
+  "type": ["text", "html"]
+}
